@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="AddHosueAddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明珠路838号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS7-IG-kow">
+                        <rect key="frame" x="10" y="6" width="275" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="iMg-Rs-goo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恒润大厦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmm-IB-pRO">
+                        <rect key="frame" x="10" y="29" width="275" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="cPv-NC-N99"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coordinateChoose" translatesAutoresizingMaskIntoConstraints="NO" id="odp-md-0UD">
+                        <rect key="frame" x="292" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PZV-pw-BLp"/>
+                            <constraint firstAttribute="width" constant="20" id="Ttp-aD-Nqf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VS7-IG-kow" secondAttribute="trailing" constant="35" id="1ny-YR-fim"/>
+                    <constraint firstItem="VS7-IG-kow" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Mq8-1X-A6h"/>
+                    <constraint firstAttribute="trailing" secondItem="odp-md-0UD" secondAttribute="trailing" constant="8" id="O13-7b-Szj"/>
+                    <constraint firstAttribute="trailing" secondItem="bmm-IB-pRO" secondAttribute="trailing" constant="35" id="QLT-YH-L5N"/>
+                    <constraint firstItem="bmm-IB-pRO" firstAttribute="top" secondItem="VS7-IG-kow" secondAttribute="bottom" constant="3" id="UGe-7f-WaL"/>
+                    <constraint firstItem="VS7-IG-kow" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gZU-9T-p4U"/>
+                    <constraint firstItem="bmm-IB-pRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="q03-6L-zrW"/>
+                    <constraint firstItem="odp-md-0UD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sXj-eB-Hkb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="chooseImageVie" destination="odp-md-0UD" id="NwO-Zs-dq0"/>
+                <outlet property="nameLabel" destination="bmm-IB-pRO" id="NT2-qf-kLl"/>
+                <outlet property="titleLabel" destination="VS7-IG-kow" id="hXV-X4-Zeq"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="65.667166416791616"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="coordinateChoose" width="24" height="24"/>
+    </resources>
+</document>

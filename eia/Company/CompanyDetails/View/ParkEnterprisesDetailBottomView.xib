@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EbA-DQ-7U4" customClass="ParkEnterprisesDetailBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWi-Cd-s2d">
+                    <rect key="frame" x="0.0" y="10" width="414" height="22"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.95294117647058818" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="mJE-tR-F6e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.96470588235294119" green="0.69382508285004141" blue="0.35259952792736804" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BH-bA-H0S">
+                    <rect key="frame" x="15" y="47" width="124.5" height="45"/>
+                    <color key="backgroundColor" red="0.49411764705882355" green="0.82352941176470584" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="vmN-Xw-gpH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="新增巡查记录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-wE-tKs">
+                    <rect key="frame" x="149.5" y="47" width="249.5" height="45"/>
+                    <color key="backgroundColor" red="0.4941176471" green="0.82352941180000006" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="BGN-au-t0g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="更新 基本信息 档案"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-rz-zDU">
+                    <rect key="frame" x="15" y="47" width="384" height="45"/>
+                    <color key="backgroundColor" red="0.4941176471" green="0.82352941180000006" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Lea-Hs-reU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="新增巡查记录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ARO-wE-tKs" firstAttribute="width" secondItem="7BH-bA-H0S" secondAttribute="width" multiplier="2:1" id="4Nr-65-Bfy"/>
+                <constraint firstItem="AWi-Cd-s2d" firstAttribute="leading" secondItem="EbA-DQ-7U4" secondAttribute="leading" id="6e7-d4-a2N"/>
+                <constraint firstItem="AWi-Cd-s2d" firstAttribute="top" secondItem="EbA-DQ-7U4" secondAttribute="top" constant="10" id="Bbt-Eh-ogc"/>
+                <constraint firstAttribute="trailing" secondItem="Cuh-rz-zDU" secondAttribute="trailing" constant="15" id="QWb-Lg-fgP"/>
+                <constraint firstItem="Cuh-rz-zDU" firstAttribute="top" secondItem="AWi-Cd-s2d" secondAttribute="bottom" constant="15" id="YkO-OU-ePi"/>
+                <constraint firstAttribute="trailing" secondItem="AWi-Cd-s2d" secondAttribute="trailing" id="Zq2-It-txv"/>
+                <constraint firstItem="7BH-bA-H0S" firstAttribute="leading" secondItem="EbA-DQ-7U4" secondAttribute="leading" constant="15" id="onF-oF-Ok9"/>
+                <constraint firstItem="ARO-wE-tKs" firstAttribute="leading" secondItem="7BH-bA-H0S" secondAttribute="trailing" constant="10" id="rF5-pf-9x1"/>
+                <constraint firstItem="Cuh-rz-zDU" firstAttribute="leading" secondItem="EbA-DQ-7U4" secondAttribute="leading" constant="15" id="scD-ho-1OJ"/>
+                <constraint firstItem="7BH-bA-H0S" firstAttribute="top" secondItem="AWi-Cd-s2d" secondAttribute="bottom" constant="15" id="sy1-OJ-i5G"/>
+                <constraint firstItem="ARO-wE-tKs" firstAttribute="top" secondItem="AWi-Cd-s2d" secondAttribute="bottom" constant="15" id="vBz-bd-OGs"/>
+                <constraint firstAttribute="trailing" secondItem="ARO-wE-tKs" secondAttribute="trailing" constant="15" id="zRt-mU-wjY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addPatrolBtn" destination="7BH-bA-H0S" id="UK7-4x-Z7t"/>
+                <outlet property="allAddPatrolBtn" destination="Cuh-rz-zDU" id="Cig-MJ-gNZ"/>
+                <outlet property="timeLabel" destination="AWi-Cd-s2d" id="goH-ST-jTn"/>
+                <outlet property="updateBtn" destination="ARO-wE-tKs" id="7qF-jx-Iok"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="-170.75892857142856"/>
+        </view>
+    </objects>
+</document>

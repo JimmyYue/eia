@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignatureViewController">
+            <connections>
+                <outlet property="drawView" destination="i8S-JK-vfI" id="iWp-cP-kLW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1f-hO-zf5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8S-JK-vfI" customClass="MYDrawView">
+                            <rect key="frame" x="1" y="1" width="412" height="844"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="i8S-JK-vfI" firstAttribute="leading" secondItem="M1f-hO-zf5" secondAttribute="leading" constant="1" id="Ihb-w9-fvv"/>
+                        <constraint firstAttribute="trailing" secondItem="i8S-JK-vfI" secondAttribute="trailing" constant="1" id="MwR-bz-jIN"/>
+                        <constraint firstAttribute="bottom" secondItem="i8S-JK-vfI" secondAttribute="bottom" constant="1" id="upS-MW-e0Y"/>
+                        <constraint firstItem="i8S-JK-vfI" firstAttribute="top" secondItem="M1f-hO-zf5" secondAttribute="top" constant="1" id="y2B-mK-ihZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-Lj-EPk">
+                    <rect key="frame" x="20" y="856" width="116.5" height="30"/>
+                    <color key="backgroundColor" red="0.32156862749999998" green="0.78823529410000004" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6rH-eJ-w8n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    </variation>
+                    <connections>
+                        <action selector="cancelBtnAction:" destination="-1" eventType="touchUpInside" id="Gh1-Rv-uXW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cV-w4-RA8">
+                    <rect key="frame" x="282.5" y="856" width="116.5" height="30"/>
+                    <color key="backgroundColor" red="0.32156862749999998" green="0.78823529410000004" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pU5-jr-lLO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    </variation>
+                    <connections>
+                        <action selector="sureBtnAction:" destination="-1" eventType="touchUpInside" id="8Rc-GA-CEA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-gX-q2e">
+                    <rect key="frame" x="151.5" y="856" width="116" height="30"/>
+                    <color key="backgroundColor" red="0.32156862749999998" green="0.78823529410000004" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ABP-ae-FD8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="清除签名">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    </variation>
+                    <connections>
+                        <action selector="clearAction:" destination="-1" eventType="touchUpInside" id="DQg-A4-pxo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3cV-w4-RA8" secondAttribute="trailing" constant="15" id="3y8-5H-lZ4"/>
+                <constraint firstItem="bX3-gX-q2e" firstAttribute="top" secondItem="M1f-hO-zf5" secondAttribute="bottom" constant="10" id="8NB-Al-sDh"/>
+                <constraint firstItem="YWH-Lj-EPk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Abi-31-Sza"/>
+                <constraint firstItem="YWH-Lj-EPk" firstAttribute="top" secondItem="M1f-hO-zf5" secondAttribute="bottom" constant="10" id="Cvi-dB-vW1"/>
+                <constraint firstItem="3cV-w4-RA8" firstAttribute="leading" secondItem="bX3-gX-q2e" secondAttribute="trailing" constant="15" id="KOg-Js-XNV"/>
+                <constraint firstItem="bX3-gX-q2e" firstAttribute="leading" secondItem="YWH-Lj-EPk" secondAttribute="trailing" constant="15" id="MT1-He-gM4"/>
+                <constraint firstItem="M1f-hO-zf5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RlS-yV-DZK"/>
+                <constraint firstAttribute="bottom" secondItem="i8S-JK-vfI" secondAttribute="bottom" constant="51" id="TLJ-Ci-l3Q"/>
+                <constraint firstItem="YWH-Lj-EPk" firstAttribute="width" secondItem="bX3-gX-q2e" secondAttribute="width" id="cMB-ds-jgj"/>
+                <constraint firstItem="3cV-w4-RA8" firstAttribute="top" secondItem="M1f-hO-zf5" secondAttribute="bottom" constant="10" id="dg6-2J-M0x"/>
+                <constraint firstAttribute="trailing" secondItem="M1f-hO-zf5" secondAttribute="trailing" id="nn3-3V-jvx"/>
+                <constraint firstItem="M1f-hO-zf5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sEh-Z9-e8G"/>
+                <constraint firstItem="bX3-gX-q2e" firstAttribute="width" secondItem="3cV-w4-RA8" secondAttribute="width" id="yVD-Gm-6Ac"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+</document>

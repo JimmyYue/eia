@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X9G-HY-ey0" customClass="CompanyScreenView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="975"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工业园区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-hO-4gJ">
+                    <rect key="frame" x="10" y="10" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fYL-De-g3C"/>
+                        <constraint firstAttribute="width" constant="70" id="nSK-Bv-LMY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所属行政划分的工业园区" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMc-EX-raf">
+                    <rect key="frame" x="95" y="10" width="309" height="35"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3gw-Hk-CSA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3P-vt-Sw0">
+                    <rect key="frame" x="95" y="10" width="309" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6Rs-1G-oMM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="parkChooseBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="Qa1-TT-MKi"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="yTJ-zn-mo6">
+                    <rect key="frame" x="374" y="15" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="84v-Ja-exp"/>
+                        <constraint firstAttribute="height" constant="25" id="ted-3q-Swn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygx-Ga-mWw">
+                    <rect key="frame" x="0.0" y="55" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="NDl-dM-F6x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业导入 (新增) 时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM8-Iu-fyh">
+                    <rect key="frame" x="10" y="65" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="HY0-Ij-GfJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-MT-5xW">
+                    <rect key="frame" x="10" y="105" width="177" height="35"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="xdd-vj-0UW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="请选择日期">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addStarTimeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="mAV-oi-ZiR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utP-6T-UUq">
+                    <rect key="frame" x="227" y="105" width="177" height="35"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7ii-xF-w1v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="至今">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addEndTimeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="Ip7-XC-xq6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQU-18-GCd">
+                    <rect key="frame" x="197" y="105" width="20" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1yr-sF-YBC"/>
+                        <constraint firstAttribute="width" constant="20" id="jAW-fF-Nqu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-N8-i7s">
+                    <rect key="frame" x="0.0" y="150" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="8qq-fS-lAo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业巡查时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-cb-TOo">
+                    <rect key="frame" x="10" y="160" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="auX-I5-HoT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-Ob-OqY">
+                    <rect key="frame" x="10" y="200" width="177" height="35"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fVg-xk-Bbd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="请选择日期">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="patrolStarTimeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="fDn-kd-2WL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c7-FN-QyE">
+                    <rect key="frame" x="227" y="200" width="177" height="35"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9Up-jm-Qil"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="当天">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="patrolEndTimeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="lcu-C1-7ln"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-gc-SEN">
+                    <rect key="frame" x="197" y="200" width="20" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="QRo-UR-wSw"/>
+                        <constraint firstAttribute="height" constant="35" id="yKI-Ak-obi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkS-R9-5rV">
+                    <rect key="frame" x="0.0" y="245" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="UaG-Bi-FoV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业经营状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-gm-QXG">
+                    <rect key="frame" x="10" y="255" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="8So-qJ-QmY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSd-uW-NCm">
+                    <rect key="frame" x="5" y="290" width="80" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3BR-ds-3AV"/>
+                        <constraint firstAttribute="width" constant="80" id="xAg-G0-5G1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="正常生产" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="operatingStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="bne-bP-Wzg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="241" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGY-OH-4az">
+                    <rect key="frame" x="92" y="290" width="80" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="xJ5-zQ-Qic"/>
+                        <constraint firstAttribute="width" constant="80" id="zcE-ZF-IHQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="装修施工" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="operatingStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="1JG-iC-g4n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="242" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-O3-rjU">
+                    <rect key="frame" x="179" y="290" width="67" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="m3M-5X-WZ8"/>
+                        <constraint firstAttribute="width" constant="67" id="y7j-Tt-9a4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="仅挂牌" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="operatingStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="z8W-ZT-sYV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="243" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVk-Ed-1vq">
+                    <rect key="frame" x="253" y="290" width="53" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="BQ8-PN-65l"/>
+                        <constraint firstAttribute="width" constant="53" id="Y4T-65-URh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="拟搬" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="operatingStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="SPf-vB-xKH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="244" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leo-UW-Pm9">
+                    <rect key="frame" x="313" y="290" width="53" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="0RT-33-7yr"/>
+                        <constraint firstAttribute="height" constant="35" id="cyI-UN-X9s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="迁出" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="operatingStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="kvi-GC-vMU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-pV-qUk">
+                    <rect key="frame" x="0.0" y="330" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="nJU-v7-tt6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voI-DB-iwE">
+                    <rect key="frame" x="10" y="340" width="64" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="BFM-qE-FDj"/>
+                        <constraint firstAttribute="height" constant="35" id="BYP-qw-FxB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-TV-6lz">
+                    <rect key="frame" x="234" y="340" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="3oh-CU-lcA"/>
+                        <constraint firstAttribute="height" constant="35" id="580-vP-qef"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="生产型" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="companyTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="jfg-ut-mwQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="251" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yQ-og-EHb">
+                    <rect key="frame" x="319" y="340" width="85" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="FSb-uq-Z6F"/>
+                        <constraint firstAttribute="width" constant="85" id="SYT-yt-gVB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="非生产型" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="companyTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="oHZ-S7-Cp4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-fG-Ujs">
+                    <rect key="frame" x="0.0" y="380" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="HdS-Dl-nyA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="巡查结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2d-Pc-c2T">
+                    <rect key="frame" x="10" y="390" width="64" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="I4B-4Z-cW9"/>
+                        <constraint firstAttribute="height" constant="35" id="mRp-ky-LhP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-57-Xuc">
+                    <rect key="frame" x="149" y="390" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="9Zx-Qs-xiA"/>
+                        <constraint firstAttribute="height" constant="35" id="RGX-qb-9Rc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="合规" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="resultBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="Qbk-10-dsr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="261" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxi-pN-oED">
+                    <rect key="frame" x="219" y="390" width="85" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="rfc-99-bBk"/>
+                        <constraint firstAttribute="width" constant="85" id="vTF-Qz-Wmu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="一般整改" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="resultBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="lSp-R8-Nkh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="262" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip1-4m-biX">
+                    <rect key="frame" x="319" y="390" width="85" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="g5C-kJ-hwa"/>
+                        <constraint firstAttribute="height" constant="35" id="gJW-hJ-Tav"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="重点整改" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="resultBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="7Xl-nX-qAE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vw-nd-aB2">
+                    <rect key="frame" x="0.0" y="430" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="GO2-r6-qoj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="厂房使用类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaS-Gg-mo7">
+                    <rect key="frame" x="10" y="440" width="100" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9Te-16-6wa"/>
+                        <constraint firstAttribute="height" constant="35" id="B7M-LE-bHB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="271" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayR-Vr-bXv">
+                    <rect key="frame" x="349" y="440" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="MNQ-iz-vJd"/>
+                        <constraint firstAttribute="width" constant="55" id="dfa-Bk-AIb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="租赁" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="userTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="rUO-UV-4GW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-BM-p2b">
+                    <rect key="frame" x="279" y="440" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="U9d-w6-WSZ"/>
+                        <constraint firstAttribute="height" constant="35" id="sC5-Fa-GDt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="自有" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="userTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="dw0-vi-TCT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxx-kf-VHe">
+                    <rect key="frame" x="0.0" y="480" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="SRr-og-QuY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="环评类别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZb-Rk-Zpf">
+                    <rect key="frame" x="10" y="490" width="64" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="A3I-cy-TnW"/>
+                        <constraint firstAttribute="width" constant="64" id="aoQ-bj-njl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocC-AE-dZB">
+                    <rect key="frame" x="134" y="490" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="HUx-uY-Ht0"/>
+                        <constraint firstAttribute="height" constant="35" id="UTj-iw-apr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="报告书" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="T1I-Y4-ddH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="281" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-3d-G7x">
+                    <rect key="frame" x="219" y="490" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="AA1-Qc-PTh"/>
+                        <constraint firstAttribute="width" constant="70" id="v12-8G-O5E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="报告表" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="vjD-lf-Pub"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="282" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-Mr-oda">
+                    <rect key="frame" x="304" y="490" width="100" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JYx-K2-og8"/>
+                        <constraint firstAttribute="width" constant="100" id="NP8-88-QEy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="登记备案表" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaTypeBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="9sn-r3-itu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-80-8nH">
+                    <rect key="frame" x="0.0" y="530" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="SVV-DZ-zkh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="环评 办理状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGy-JX-mc9">
+                    <rect key="frame" x="10" y="540" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="zRf-Lu-74i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd3-4u-sNw">
+                    <rect key="frame" x="5" y="575" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="655-To-hGw"/>
+                        <constraint firstAttribute="height" constant="35" id="Nme-UH-wXc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="办理中" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="Ld1-p7-Be7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="291" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-tA-HD0">
+                    <rect key="frame" x="90" y="575" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Qk2-hP-XQ4"/>
+                        <constraint firstAttribute="height" constant="35" id="nOc-kl-xuQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="已办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="d3l-Md-L5w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="292" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggV-fl-lxn">
+                    <rect key="frame" x="175" y="575" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="JV2-o9-g9q"/>
+                        <constraint firstAttribute="height" constant="35" id="jc3-bI-8MC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="未办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="9Of-PC-UZg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="293" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-1L-7LZ">
+                    <rect key="frame" x="260" y="575" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Sqv-io-3PL"/>
+                        <constraint firstAttribute="width" constant="70" id="xIg-fc-T8J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="不需要" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="eiaStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="wXw-wY-p59"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hw-SY-fyi">
+                    <rect key="frame" x="0.0" y="615" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="DN2-lF-X22"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验收 办理状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slh-Ja-nZX">
+                    <rect key="frame" x="10" y="625" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kpl-no-ZHT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ir-12-pFW">
+                    <rect key="frame" x="5" y="660" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="5Kk-Mw-Cvn"/>
+                        <constraint firstAttribute="height" constant="35" id="BBf-JH-Cfd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="办理中" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="acceptanceStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="zV5-QK-DXY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFy-NM-b7u">
+                    <rect key="frame" x="90" y="660" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Rgm-3L-pxJ"/>
+                        <constraint firstAttribute="width" constant="70" id="kwN-vR-yEV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="已办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="acceptanceStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="WCy-Vq-afd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMx-zG-ILb">
+                    <rect key="frame" x="175" y="660" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="KBu-hA-gNJ"/>
+                        <constraint firstAttribute="height" constant="35" id="N9J-CW-pfb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="未办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="acceptanceStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="yzW-GY-IU6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-AQ-ftY">
+                    <rect key="frame" x="260" y="660" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7bZ-cI-yxA"/>
+                        <constraint firstAttribute="width" constant="70" id="hve-wS-2M6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="不需要" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="acceptanceStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="fb9-nL-aWC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jaj-PQ-jXR">
+                    <rect key="frame" x="0.0" y="700" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="idx-bB-v1K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固废/危废处置 办理状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yA-5A-JAe">
+                    <rect key="frame" x="10" y="710" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="nLu-1L-6Wb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alB-Ma-0mh">
+                    <rect key="frame" x="5" y="745" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="LAd-i8-dLK"/>
+                        <constraint firstAttribute="height" constant="35" id="Q1O-hF-osA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="办理中" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="wasteDisposalBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="cQK-wO-23y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="311" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mg-2F-lBx">
+                    <rect key="frame" x="90" y="745" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="qan-Yn-Tls"/>
+                        <constraint firstAttribute="height" constant="35" id="tr1-i2-jAD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="已办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="wasteDisposalBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="a1n-Vk-9u3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="312" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVz-8x-mGz">
+                    <rect key="frame" x="175" y="745" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="U0c-Se-0xV"/>
+                        <constraint firstAttribute="height" constant="35" id="g9T-wb-8AF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="未办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="wasteDisposalBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="eNC-n9-XOM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="313" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKN-if-KGy">
+                    <rect key="frame" x="260" y="745" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="ZNW-1z-QwI"/>
+                        <constraint firstAttribute="height" constant="35" id="uIJ-1w-1OC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="不需要" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="wasteDisposalBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="Njd-Ba-LEN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYy-21-O06">
+                    <rect key="frame" x="0.0" y="785" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="a2J-gD-aeJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排污许可证 类别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tR-Fn-p2x">
+                    <rect key="frame" x="10" y="795" width="120" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="7Pn-tC-sy2"/>
+                        <constraint firstAttribute="height" constant="35" id="QqQ-cW-udj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="321" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llq-oj-a3n">
+                    <rect key="frame" x="279" y="795" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="myc-3P-iIw"/>
+                        <constraint firstAttribute="width" constant="55" id="okC-QT-95d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="重点" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="YEm-zy-6Sw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg4-uM-4up">
+                    <rect key="frame" x="209" y="795" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="cQO-PY-nmK"/>
+                        <constraint firstAttribute="height" constant="35" id="tgf-V3-BMJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="登记" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="JAM-E2-Pod"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="322" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC2-fI-IBg">
+                    <rect key="frame" x="349" y="795" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Vty-gc-kR8"/>
+                        <constraint firstAttribute="width" constant="55" id="mfg-6w-ryy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="简化" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="DtO-ca-ZfO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLt-Zy-K7X">
+                    <rect key="frame" x="0.0" y="835" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="jzF-zX-AL5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排污许可证 办理状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0h-Gh-xVF">
+                    <rect key="frame" x="10" y="845" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="0bH-qQ-bUs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-NP-bjV">
+                    <rect key="frame" x="5" y="880" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="XPf-ja-v5x"/>
+                        <constraint firstAttribute="height" constant="35" id="aNq-YH-yRE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="办理中" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="mDq-Xj-Pbs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="331" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjK-vx-En3">
+                    <rect key="frame" x="90" y="880" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Cjm-s0-nzB"/>
+                        <constraint firstAttribute="width" constant="70" id="sG1-yT-25b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="已办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="g8z-fu-NuT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="332" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejy-Sj-ZzG">
+                    <rect key="frame" x="175" y="880" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Cds-ma-SgD"/>
+                        <constraint firstAttribute="width" constant="70" id="oUa-ES-tiI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="未办理" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="evV-8d-x5Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="333" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fni-h9-22G">
+                    <rect key="frame" x="260" y="880" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="3og-Pv-rhZ"/>
+                        <constraint firstAttribute="height" constant="35" id="IKb-XW-qXQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="不需要" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="blowdownCategoryStateBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="DWp-KQ-7bg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJH-Zb-P1n">
+                    <rect key="frame" x="0.0" y="920" width="414" height="5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="qbc-eo-7dP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为废处置管理是否达标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKG-6j-dac">
+                    <rect key="frame" x="10" y="930" width="160" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4Mr-gJ-Chb"/>
+                        <constraint firstAttribute="width" constant="160" id="c48-Tv-bmD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="341" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUg-uD-Vxu">
+                    <rect key="frame" x="349" y="930" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7Cd-we-sFF"/>
+                        <constraint firstAttribute="width" constant="55" id="e1i-Me-q11"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="否" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="yesOrOnBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="564-Ia-49T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="340" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2x-V5-eGa">
+                    <rect key="frame" x="279" y="930" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="Z3X-0d-LZH"/>
+                        <constraint firstAttribute="height" constant="35" id="lhf-ay-akS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="是" image="public_danxuan_weixuan">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="public_danxuan_xuanze"/>
+                    <connections>
+                        <action selector="yesOrOnBtnAction:" destination="X9G-HY-ey0" eventType="touchUpInside" id="jvx-xc-Xyl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="BM8-Iu-fyh" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="0Cw-T9-HGe"/>
+                <constraint firstItem="ggV-fl-lxn" firstAttribute="top" secondItem="fGy-JX-mc9" secondAttribute="bottom" id="0dP-2h-kEh"/>
+                <constraint firstItem="5c7-FN-QyE" firstAttribute="top" secondItem="zAx-cb-TOo" secondAttribute="bottom" constant="5" id="13u-zs-N7a"/>
+                <constraint firstItem="XJH-Zb-P1n" firstAttribute="top" secondItem="hgv-NP-bjV" secondAttribute="bottom" constant="5" id="1Uy-6n-7DZ"/>
+                <constraint firstItem="lRJ-N8-i7s" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="1ij-iy-cYn"/>
+                <constraint firstItem="MWM-AQ-ftY" firstAttribute="top" secondItem="Slh-Ja-nZX" secondAttribute="bottom" id="2Kr-aq-0Dd"/>
+                <constraint firstItem="BU5-3d-G7x" firstAttribute="leading" secondItem="ocC-AE-dZB" secondAttribute="trailing" constant="15" id="3Jy-ol-YYX"/>
+                <constraint firstItem="VH7-gc-SEN" firstAttribute="leading" secondItem="XW6-Ob-OqY" secondAttribute="trailing" constant="10" id="3lw-Ly-R2J"/>
+                <constraint firstAttribute="trailing" secondItem="RLt-Zy-K7X" secondAttribute="trailing" id="413-o5-JdG"/>
+                <constraint firstItem="1cS-TV-6lz" firstAttribute="top" secondItem="aZc-pV-qUk" secondAttribute="bottom" constant="5" id="4hJ-R3-W4r"/>
+                <constraint firstItem="GQU-18-GCd" firstAttribute="leading" secondItem="3qN-MT-5xW" secondAttribute="trailing" constant="10" id="4ia-iH-TCK"/>
+                <constraint firstAttribute="trailing" secondItem="JDt-Mr-oda" secondAttribute="trailing" constant="10" id="4kL-nT-zK3"/>
+                <constraint firstItem="VH7-gc-SEN" firstAttribute="top" secondItem="zAx-cb-TOo" secondAttribute="bottom" constant="5" id="56o-Od-ROt"/>
+                <constraint firstItem="8tR-Fn-p2x" firstAttribute="top" secondItem="SYy-21-O06" secondAttribute="bottom" constant="5" id="5WM-yS-gs8"/>
+                <constraint firstItem="Slh-Ja-nZX" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="5nc-fT-NLR"/>
+                <constraint firstItem="X0h-Gh-xVF" firstAttribute="top" secondItem="RLt-Zy-K7X" secondAttribute="bottom" constant="5" id="6Bx-fM-9sI"/>
+                <constraint firstItem="Leo-UW-Pm9" firstAttribute="top" secondItem="xF0-gm-QXG" secondAttribute="bottom" id="6jd-6k-g5t"/>
+                <constraint firstItem="3qN-MT-5xW" firstAttribute="top" secondItem="BM8-Iu-fyh" secondAttribute="bottom" constant="5" id="7Js-0S-ixz"/>
+                <constraint firstItem="RkS-R9-5rV" firstAttribute="top" secondItem="XW6-Ob-OqY" secondAttribute="bottom" constant="10" id="7LV-7O-GQ4"/>
+                <constraint firstAttribute="trailing" secondItem="Slh-Ja-nZX" secondAttribute="trailing" constant="10" id="80a-8b-MvG"/>
+                <constraint firstItem="tGY-OH-4az" firstAttribute="top" secondItem="xF0-gm-QXG" secondAttribute="bottom" id="8MC-vJ-KtT"/>
+                <constraint firstItem="uC2-fI-IBg" firstAttribute="top" secondItem="SYy-21-O06" secondAttribute="bottom" constant="5" id="8jF-pE-l2l"/>
+                <constraint firstItem="7yQ-og-EHb" firstAttribute="leading" secondItem="1cS-TV-6lz" secondAttribute="trailing" constant="15" id="8xA-wV-HYc"/>
+                <constraint firstItem="aZb-Rk-Zpf" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="8yQ-Rn-EMf"/>
+                <constraint firstItem="fGy-JX-mc9" firstAttribute="top" secondItem="MZv-80-8nH" secondAttribute="bottom" constant="5" id="9B2-si-6qT"/>
+                <constraint firstItem="0Mg-2F-lBx" firstAttribute="top" secondItem="3yA-5A-JAe" secondAttribute="bottom" id="9iB-a0-5Hi"/>
+                <constraint firstItem="8tR-Fn-p2x" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="9rk-uB-UHp"/>
+                <constraint firstItem="4ir-12-pFW" firstAttribute="top" secondItem="Slh-Ja-nZX" secondAttribute="bottom" id="Aum-8W-1eQ"/>
+                <constraint firstAttribute="trailing" secondItem="SYy-21-O06" secondAttribute="trailing" id="B9u-sk-InS"/>
+                <constraint firstItem="r3P-vt-Sw0" firstAttribute="leading" secondItem="GU4-hO-4gJ" secondAttribute="trailing" constant="15" id="Bk7-zf-0f1"/>
+                <constraint firstItem="RLt-Zy-K7X" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="Bv8-l0-2Pp"/>
+                <constraint firstItem="kYd-fG-Ujs" firstAttribute="top" secondItem="voI-DB-iwE" secondAttribute="bottom" constant="5" id="CJ0-vN-Clm"/>
+                <constraint firstItem="Jaj-PQ-jXR" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="Cmz-iN-oxn"/>
+                <constraint firstAttribute="trailing" secondItem="aZc-pV-qUk" secondAttribute="trailing" id="DGv-q1-iLt"/>
+                <constraint firstItem="fGy-JX-mc9" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="DXY-2d-sif"/>
+                <constraint firstItem="X0h-Gh-xVF" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="ETf-Wn-bNH"/>
+                <constraint firstItem="zd3-4u-sNw" firstAttribute="top" secondItem="fGy-JX-mc9" secondAttribute="bottom" id="EYk-Ie-1t7"/>
+                <constraint firstItem="5c7-FN-QyE" firstAttribute="leading" secondItem="VH7-gc-SEN" secondAttribute="trailing" constant="10" id="Exn-37-IBh"/>
+                <constraint firstItem="vxi-pN-oED" firstAttribute="top" secondItem="kYd-fG-Ujs" secondAttribute="bottom" constant="5" id="Eyu-6f-0uD"/>
+                <constraint firstAttribute="trailing" secondItem="BM8-Iu-fyh" secondAttribute="trailing" constant="10" id="FY4-f1-qFi"/>
+                <constraint firstItem="ip1-4m-biX" firstAttribute="top" secondItem="kYd-fG-Ujs" secondAttribute="bottom" constant="5" id="G4n-Gg-I0a"/>
+                <constraint firstItem="zAx-cb-TOo" firstAttribute="top" secondItem="lRJ-N8-i7s" secondAttribute="bottom" constant="5" id="HQb-HA-GVo"/>
+                <constraint firstItem="qqb-BM-p2b" firstAttribute="top" secondItem="7Vw-nd-aB2" secondAttribute="bottom" constant="5" id="Haw-hb-fWh"/>
+                <constraint firstItem="eKN-if-KGy" firstAttribute="leading" secondItem="SVz-8x-mGz" secondAttribute="trailing" constant="15" id="HpD-gc-esD"/>
+                <constraint firstItem="RkS-R9-5rV" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="IUb-ba-Obs"/>
+                <constraint firstItem="LMc-EX-raf" firstAttribute="top" secondItem="X9G-HY-ey0" secondAttribute="top" constant="10" id="Iap-qD-8Y8"/>
+                <constraint firstItem="CUg-uD-Vxu" firstAttribute="leading" secondItem="U2x-V5-eGa" secondAttribute="trailing" constant="15" id="Ild-gZ-GLc"/>
+                <constraint firstItem="xaS-Gg-mo7" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="J5S-CW-PAy"/>
+                <constraint firstItem="kg4-uM-4up" firstAttribute="top" secondItem="SYy-21-O06" secondAttribute="bottom" constant="5" id="J8U-dZ-KWj"/>
+                <constraint firstItem="MWM-AQ-ftY" firstAttribute="leading" secondItem="ZMx-zG-ILb" secondAttribute="trailing" constant="15" id="JyG-VF-h3i"/>
+                <constraint firstItem="XW6-Ob-OqY" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="K2L-hh-LgO"/>
+                <constraint firstItem="qSd-uW-NCm" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="5" id="K5I-oj-Y2E"/>
+                <constraint firstItem="GU4-hO-4gJ" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="KaD-TX-32x"/>
+                <constraint firstItem="Ejy-Sj-ZzG" firstAttribute="top" secondItem="X0h-Gh-xVF" secondAttribute="bottom" id="KsF-aZ-AGR"/>
+                <constraint firstItem="yTJ-zn-mo6" firstAttribute="leading" secondItem="r3P-vt-Sw0" secondAttribute="trailing" constant="-30" id="LQA-nx-24J"/>
+                <constraint firstItem="H2d-Pc-c2T" firstAttribute="top" secondItem="kYd-fG-Ujs" secondAttribute="bottom" constant="5" id="MBU-E9-F7M"/>
+                <constraint firstAttribute="trailing" secondItem="Jaj-PQ-jXR" secondAttribute="trailing" id="N37-aQ-E4O"/>
+                <constraint firstItem="fKG-6j-dac" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="Nkx-Pw-2aY"/>
+                <constraint firstItem="SYy-21-O06" firstAttribute="top" secondItem="alB-Ma-0mh" secondAttribute="bottom" constant="5" id="PPd-sF-gFK"/>
+                <constraint firstAttribute="trailing" secondItem="6Hw-SY-fyi" secondAttribute="trailing" id="PkU-I7-Hud"/>
+                <constraint firstItem="ZMx-zG-ILb" firstAttribute="leading" secondItem="xFy-NM-b7u" secondAttribute="trailing" constant="15" id="Ppi-tr-855"/>
+                <constraint firstItem="hgv-NP-bjV" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="5" id="PsZ-TI-5mH"/>
+                <constraint firstItem="U2x-V5-eGa" firstAttribute="top" secondItem="XJH-Zb-P1n" secondAttribute="bottom" constant="5" id="PuO-Jd-hex"/>
+                <constraint firstItem="hxx-kf-VHe" firstAttribute="top" secondItem="xaS-Gg-mo7" secondAttribute="bottom" constant="5" id="Q36-Cj-NZa"/>
+                <constraint firstAttribute="trailing" secondItem="RkS-R9-5rV" secondAttribute="trailing" id="QFc-Mf-uE2"/>
+                <constraint firstItem="aVk-Ed-1vq" firstAttribute="leading" secondItem="CQW-O3-rjU" secondAttribute="trailing" constant="7" id="QLx-GL-IPm"/>
+                <constraint firstItem="kYd-fG-Ujs" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="Qp1-k6-ORY"/>
+                <constraint firstItem="Leo-UW-Pm9" firstAttribute="leading" secondItem="aVk-Ed-1vq" secondAttribute="trailing" constant="7" id="Qro-m0-abp"/>
+                <constraint firstItem="Mok-tA-HD0" firstAttribute="top" secondItem="fGy-JX-mc9" secondAttribute="bottom" id="RAn-19-QCu"/>
+                <constraint firstItem="xaS-Gg-mo7" firstAttribute="top" secondItem="7Vw-nd-aB2" secondAttribute="bottom" constant="5" id="RT2-3H-ZAT"/>
+                <constraint firstItem="ayR-Vr-bXv" firstAttribute="top" secondItem="7Vw-nd-aB2" secondAttribute="bottom" constant="5" id="Rdm-aU-d3g"/>
+                <constraint firstItem="BM8-Iu-fyh" firstAttribute="top" secondItem="Ygx-Ga-mWw" secondAttribute="bottom" constant="5" id="RqD-SY-dCv"/>
+                <constraint firstAttribute="trailing" secondItem="ip1-4m-biX" secondAttribute="trailing" constant="10" id="SMF-QI-kJa"/>
+                <constraint firstItem="utP-6T-UUq" firstAttribute="leading" secondItem="GQU-18-GCd" secondAttribute="trailing" constant="10" id="SWO-Rh-RZl"/>
+                <constraint firstItem="xF0-gm-QXG" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="SfX-dN-bua"/>
+                <constraint firstItem="JDt-Mr-oda" firstAttribute="leading" secondItem="BU5-3d-G7x" secondAttribute="trailing" constant="15" id="T6v-2f-Uxf"/>
+                <constraint firstItem="XW6-Ob-OqY" firstAttribute="top" secondItem="zAx-cb-TOo" secondAttribute="bottom" constant="5" id="T9F-ec-81K"/>
+                <constraint firstItem="zAx-cb-TOo" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="THT-DB-AN5"/>
+                <constraint firstItem="ip1-4m-biX" firstAttribute="leading" secondItem="vxi-pN-oED" secondAttribute="trailing" constant="15" id="UTj-L5-feP"/>
+                <constraint firstItem="LMc-EX-raf" firstAttribute="leading" secondItem="GU4-hO-4gJ" secondAttribute="trailing" constant="15" id="V2e-NY-02t"/>
+                <constraint firstAttribute="trailing" secondItem="ayR-Vr-bXv" secondAttribute="trailing" constant="10" id="VXU-XS-lTX"/>
+                <constraint firstItem="llq-oj-a3n" firstAttribute="top" secondItem="SYy-21-O06" secondAttribute="bottom" constant="5" id="Vfd-E7-07X"/>
+                <constraint firstItem="utP-6T-UUq" firstAttribute="top" secondItem="BM8-Iu-fyh" secondAttribute="bottom" constant="5" id="VmV-ev-gZU"/>
+                <constraint firstItem="6Hw-SY-fyi" firstAttribute="top" secondItem="zd3-4u-sNw" secondAttribute="bottom" constant="5" id="Vxe-e3-cok"/>
+                <constraint firstItem="0Mg-2F-lBx" firstAttribute="leading" secondItem="alB-Ma-0mh" secondAttribute="trailing" constant="15" id="W27-lX-vvn"/>
+                <constraint firstItem="Fni-h9-22G" firstAttribute="top" secondItem="X0h-Gh-xVF" secondAttribute="bottom" id="We8-u9-JYV"/>
+                <constraint firstItem="tGY-OH-4az" firstAttribute="leading" secondItem="qSd-uW-NCm" secondAttribute="trailing" constant="7" id="WlJ-H2-yys"/>
+                <constraint firstItem="ggV-fl-lxn" firstAttribute="leading" secondItem="Mok-tA-HD0" secondAttribute="trailing" constant="15" id="Wxj-uS-G3f"/>
+                <constraint firstAttribute="trailing" secondItem="r3P-vt-Sw0" secondAttribute="trailing" constant="10" id="X7B-jK-K4N"/>
+                <constraint firstAttribute="trailing" secondItem="hxx-kf-VHe" secondAttribute="trailing" id="XGI-m7-zhd"/>
+                <constraint firstItem="SYy-21-O06" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="XeU-dy-dF8"/>
+                <constraint firstItem="utP-6T-UUq" firstAttribute="width" secondItem="3qN-MT-5xW" secondAttribute="width" id="Y1m-iS-dhd"/>
+                <constraint firstItem="zd3-4u-sNw" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="5" id="YeL-QO-xNu"/>
+                <constraint firstItem="CQW-O3-rjU" firstAttribute="leading" secondItem="tGY-OH-4az" secondAttribute="trailing" constant="7" id="YqJ-x5-Ede"/>
+                <constraint firstItem="eKN-if-KGy" firstAttribute="top" secondItem="3yA-5A-JAe" secondAttribute="bottom" id="Zrp-Pc-1Kd"/>
+                <constraint firstAttribute="trailing" secondItem="utP-6T-UUq" secondAttribute="trailing" constant="10" id="Zt1-k5-PsU"/>
+                <constraint firstItem="llq-oj-a3n" firstAttribute="leading" secondItem="kg4-uM-4up" secondAttribute="trailing" constant="15" id="aKO-ck-oth"/>
+                <constraint firstItem="6Hw-SY-fyi" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="bEY-ib-UY3"/>
+                <constraint firstItem="xF0-gm-QXG" firstAttribute="top" secondItem="RkS-R9-5rV" secondAttribute="bottom" constant="5" id="bfe-4A-1SV"/>
+                <constraint firstItem="RLt-Zy-K7X" firstAttribute="top" secondItem="8tR-Fn-p2x" secondAttribute="bottom" constant="5" id="bh9-M0-LEY"/>
+                <constraint firstItem="Us2-1L-7LZ" firstAttribute="top" secondItem="fGy-JX-mc9" secondAttribute="bottom" id="c2h-wK-MLR"/>
+                <constraint firstItem="MZv-80-8nH" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="cKG-qB-it9"/>
+                <constraint firstItem="qSd-uW-NCm" firstAttribute="top" secondItem="xF0-gm-QXG" secondAttribute="bottom" id="cQw-oW-K5l"/>
+                <constraint firstItem="alB-Ma-0mh" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="5" id="dep-D0-MZi"/>
+                <constraint firstItem="Ygx-Ga-mWw" firstAttribute="top" secondItem="r3P-vt-Sw0" secondAttribute="bottom" constant="10" id="e0V-iV-FPg"/>
+                <constraint firstAttribute="trailing" secondItem="MZv-80-8nH" secondAttribute="trailing" id="eFR-tp-vDk"/>
+                <constraint firstItem="BU5-3d-G7x" firstAttribute="top" secondItem="hxx-kf-VHe" secondAttribute="bottom" constant="5" id="eR9-TF-IEq"/>
+                <constraint firstItem="lRJ-N8-i7s" firstAttribute="top" secondItem="3qN-MT-5xW" secondAttribute="bottom" constant="10" id="eSn-L4-uDo"/>
+                <constraint firstAttribute="trailing" secondItem="5c7-FN-QyE" secondAttribute="trailing" constant="10" id="etl-0g-Maa"/>
+                <constraint firstItem="5c7-FN-QyE" firstAttribute="width" secondItem="XW6-Ob-OqY" secondAttribute="width" id="fLi-HU-kch"/>
+                <constraint firstItem="r3P-vt-Sw0" firstAttribute="top" secondItem="X9G-HY-ey0" secondAttribute="top" constant="10" id="fdA-De-Aam"/>
+                <constraint firstItem="CUg-uD-Vxu" firstAttribute="top" secondItem="XJH-Zb-P1n" secondAttribute="bottom" constant="5" id="fiZ-jQ-FAf"/>
+                <constraint firstItem="3yA-5A-JAe" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="fua-CM-ihE"/>
+                <constraint firstItem="7Vw-nd-aB2" firstAttribute="top" secondItem="H2d-Pc-c2T" secondAttribute="bottom" constant="5" id="gSm-Qt-rI0"/>
+                <constraint firstItem="aZc-pV-qUk" firstAttribute="top" secondItem="qSd-uW-NCm" secondAttribute="bottom" constant="5" id="ggh-fQ-pCq"/>
+                <constraint firstAttribute="trailing" secondItem="7yQ-og-EHb" secondAttribute="trailing" constant="10" id="gu9-xE-Cbv"/>
+                <constraint firstAttribute="trailing" secondItem="zAx-cb-TOo" secondAttribute="trailing" constant="10" id="h2T-ml-YpG"/>
+                <constraint firstItem="Fni-h9-22G" firstAttribute="leading" secondItem="Ejy-Sj-ZzG" secondAttribute="trailing" constant="15" id="hWA-En-kcK"/>
+                <constraint firstItem="4ir-12-pFW" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="5" id="hwL-ra-nRD"/>
+                <constraint firstItem="hgv-NP-bjV" firstAttribute="top" secondItem="X0h-Gh-xVF" secondAttribute="bottom" id="i1w-c5-d5J"/>
+                <constraint firstItem="voI-DB-iwE" firstAttribute="top" secondItem="aZc-pV-qUk" secondAttribute="bottom" constant="5" id="iDH-aK-UW9"/>
+                <constraint firstItem="CQW-O3-rjU" firstAttribute="top" secondItem="xF0-gm-QXG" secondAttribute="bottom" id="iDb-ca-5dU"/>
+                <constraint firstItem="IjK-vx-En3" firstAttribute="top" secondItem="X0h-Gh-xVF" secondAttribute="bottom" id="iYd-53-T4U"/>
+                <constraint firstItem="Ejy-Sj-ZzG" firstAttribute="leading" secondItem="IjK-vx-En3" secondAttribute="trailing" constant="15" id="izx-zu-gyf"/>
+                <constraint firstAttribute="trailing" secondItem="CUg-uD-Vxu" secondAttribute="trailing" constant="10" id="jJS-Dn-2Y0"/>
+                <constraint firstItem="SVz-8x-mGz" firstAttribute="top" secondItem="3yA-5A-JAe" secondAttribute="bottom" id="jbA-af-4A8"/>
+                <constraint firstAttribute="trailing" secondItem="lRJ-N8-i7s" secondAttribute="trailing" id="jgL-x1-Kc3"/>
+                <constraint firstItem="H2d-Pc-c2T" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="kBx-GK-qJ3"/>
+                <constraint firstItem="hxx-kf-VHe" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="kSM-mZ-jjb"/>
+                <constraint firstItem="Slh-Ja-nZX" firstAttribute="top" secondItem="6Hw-SY-fyi" secondAttribute="bottom" constant="5" id="kb5-ki-Bfb"/>
+                <constraint firstAttribute="trailing" secondItem="kYd-fG-Ujs" secondAttribute="trailing" id="kcM-dq-dka"/>
+                <constraint firstAttribute="trailing" secondItem="fGy-JX-mc9" secondAttribute="trailing" constant="10" id="ke3-j2-LBM"/>
+                <constraint firstItem="ayR-Vr-bXv" firstAttribute="leading" secondItem="qqb-BM-p2b" secondAttribute="trailing" constant="15" id="l6E-Ij-hmh"/>
+                <constraint firstAttribute="trailing" secondItem="LMc-EX-raf" secondAttribute="trailing" constant="10" id="lDr-4c-my7"/>
+                <constraint firstItem="voI-DB-iwE" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="m3w-gc-Idr"/>
+                <constraint firstAttribute="trailing" secondItem="XJH-Zb-P1n" secondAttribute="trailing" id="mRR-ZE-ytN"/>
+                <constraint firstItem="Ygx-Ga-mWw" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="nQ8-af-Yi6"/>
+                <constraint firstItem="3yA-5A-JAe" firstAttribute="top" secondItem="Jaj-PQ-jXR" secondAttribute="bottom" constant="5" id="o4T-sb-BqH"/>
+                <constraint firstItem="aVk-Ed-1vq" firstAttribute="top" secondItem="xF0-gm-QXG" secondAttribute="bottom" id="o6J-UG-8wR"/>
+                <constraint firstAttribute="trailing" secondItem="X0h-Gh-xVF" secondAttribute="trailing" constant="10" id="pS1-vR-Rxi"/>
+                <constraint firstItem="xFy-NM-b7u" firstAttribute="top" secondItem="Slh-Ja-nZX" secondAttribute="bottom" id="pZs-Nr-zPM"/>
+                <constraint firstItem="JDt-Mr-oda" firstAttribute="top" secondItem="hxx-kf-VHe" secondAttribute="bottom" constant="5" id="pnq-Jr-zDc"/>
+                <constraint firstItem="XJH-Zb-P1n" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="qOo-EP-qRm"/>
+                <constraint firstAttribute="trailing" secondItem="uC2-fI-IBg" secondAttribute="trailing" constant="10" id="qVY-SA-K5K"/>
+                <constraint firstItem="MZv-80-8nH" firstAttribute="top" secondItem="aZb-Rk-Zpf" secondAttribute="bottom" constant="5" id="qWP-KL-vbz"/>
+                <constraint firstItem="ZMx-zG-ILb" firstAttribute="top" secondItem="Slh-Ja-nZX" secondAttribute="bottom" id="qkg-SK-aEp"/>
+                <constraint firstAttribute="trailing" secondItem="7Vw-nd-aB2" secondAttribute="trailing" id="rQY-fc-TWy"/>
+                <constraint firstItem="vxi-pN-oED" firstAttribute="leading" secondItem="NO2-57-Xuc" secondAttribute="trailing" constant="15" id="rd2-tL-cdt"/>
+                <constraint firstItem="NO2-57-Xuc" firstAttribute="top" secondItem="kYd-fG-Ujs" secondAttribute="bottom" constant="5" id="sK7-sL-EIo"/>
+                <constraint firstItem="GU4-hO-4gJ" firstAttribute="top" secondItem="X9G-HY-ey0" secondAttribute="top" constant="10" id="sNj-JA-JYy"/>
+                <constraint firstItem="xFy-NM-b7u" firstAttribute="leading" secondItem="4ir-12-pFW" secondAttribute="trailing" constant="15" id="sd5-VW-mpV"/>
+                <constraint firstItem="7yQ-og-EHb" firstAttribute="top" secondItem="aZc-pV-qUk" secondAttribute="bottom" constant="5" id="tBY-dC-fcl"/>
+                <constraint firstItem="Jaj-PQ-jXR" firstAttribute="top" secondItem="4ir-12-pFW" secondAttribute="bottom" constant="5" id="tFj-n2-avT"/>
+                <constraint firstItem="SVz-8x-mGz" firstAttribute="leading" secondItem="0Mg-2F-lBx" secondAttribute="trailing" constant="15" id="tGr-Zc-IwG"/>
+                <constraint firstItem="IjK-vx-En3" firstAttribute="leading" secondItem="hgv-NP-bjV" secondAttribute="trailing" constant="15" id="vNW-dP-uAz"/>
+                <constraint firstItem="3qN-MT-5xW" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" constant="10" id="vYi-Cw-5SA"/>
+                <constraint firstItem="uC2-fI-IBg" firstAttribute="leading" secondItem="llq-oj-a3n" secondAttribute="trailing" constant="15" id="vow-E8-i5u"/>
+                <constraint firstItem="GQU-18-GCd" firstAttribute="top" secondItem="BM8-Iu-fyh" secondAttribute="bottom" constant="5" id="w2U-aa-YEF"/>
+                <constraint firstItem="Mok-tA-HD0" firstAttribute="leading" secondItem="zd3-4u-sNw" secondAttribute="trailing" constant="15" id="wFt-jt-r3u"/>
+                <constraint firstItem="aZb-Rk-Zpf" firstAttribute="top" secondItem="hxx-kf-VHe" secondAttribute="bottom" constant="5" id="xMV-sf-ZUW"/>
+                <constraint firstItem="fKG-6j-dac" firstAttribute="top" secondItem="XJH-Zb-P1n" secondAttribute="bottom" constant="5" id="xdV-Di-aPi"/>
+                <constraint firstItem="alB-Ma-0mh" firstAttribute="top" secondItem="3yA-5A-JAe" secondAttribute="bottom" id="ybo-ZV-bux"/>
+                <constraint firstItem="ocC-AE-dZB" firstAttribute="top" secondItem="hxx-kf-VHe" secondAttribute="bottom" constant="5" id="ycO-On-Koa"/>
+                <constraint firstItem="7Vw-nd-aB2" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="ydY-ya-zhB"/>
+                <constraint firstAttribute="trailing" secondItem="3yA-5A-JAe" secondAttribute="trailing" constant="10" id="yf9-xq-lMM"/>
+                <constraint firstAttribute="trailing" secondItem="Ygx-Ga-mWw" secondAttribute="trailing" id="yfj-Sq-lUl"/>
+                <constraint firstAttribute="trailing" secondItem="xF0-gm-QXG" secondAttribute="trailing" constant="10" id="ywo-co-vR9"/>
+                <constraint firstItem="Us2-1L-7LZ" firstAttribute="leading" secondItem="ggV-fl-lxn" secondAttribute="trailing" constant="15" id="yym-Ek-6sV"/>
+                <constraint firstItem="aZc-pV-qUk" firstAttribute="leading" secondItem="X9G-HY-ey0" secondAttribute="leading" id="z49-yE-yPT"/>
+                <constraint firstItem="yTJ-zn-mo6" firstAttribute="top" secondItem="r3P-vt-Sw0" secondAttribute="bottom" constant="-30" id="zc1-V4-b4G"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="acceptanceState1Btn" destination="4ir-12-pFW" id="Yw0-cU-dlm"/>
+                <outlet property="acceptanceState2Btn" destination="xFy-NM-b7u" id="R4g-vG-xIX"/>
+                <outlet property="acceptanceState3Btn" destination="ZMx-zG-ILb" id="WZJ-SY-VUf"/>
+                <outlet property="acceptanceState4Btn" destination="MWM-AQ-ftY" id="FRl-vc-44k"/>
+                <outlet property="addEndTimeBtn" destination="utP-6T-UUq" id="xPp-De-Jsa"/>
+                <outlet property="addStarTimeBtn" destination="3qN-MT-5xW" id="8Oe-6y-b3P"/>
+                <outlet property="blowdownCategory1Btn" destination="kg4-uM-4up" id="PDL-Ur-iMX"/>
+                <outlet property="blowdownCategory2Btn" destination="llq-oj-a3n" id="Olo-PR-7v8"/>
+                <outlet property="blowdownCategory3Btn" destination="uC2-fI-IBg" id="J9Q-oZ-x5k"/>
+                <outlet property="blowdownCategoryState1Btn" destination="hgv-NP-bjV" id="TIw-lq-npE"/>
+                <outlet property="blowdownCategoryState2Btn" destination="IjK-vx-En3" id="0Bc-s0-Zk0"/>
+                <outlet property="blowdownCategoryState3Btn" destination="Ejy-Sj-ZzG" id="M4D-MW-hOZ"/>
+                <outlet property="blowdownCategoryState4Btn" destination="Fni-h9-22G" id="Lg4-yA-IVu"/>
+                <outlet property="companyType1Btn" destination="1cS-TV-6lz" id="6gf-LJ-kb4"/>
+                <outlet property="companyType2Btn" destination="7yQ-og-EHb" id="L4A-pp-aCT"/>
+                <outlet property="eiaState1Btn" destination="zd3-4u-sNw" id="2gd-ia-hoE"/>
+                <outlet property="eiaState2Btn" destination="Mok-tA-HD0" id="VUM-pq-1CD"/>
+                <outlet property="eiaState3Btn" destination="ggV-fl-lxn" id="x3t-dG-ugD"/>
+                <outlet property="eiaState4Btn" destination="Us2-1L-7LZ" id="34d-vj-WDp"/>
+                <outlet property="eiaType1Btn" destination="ocC-AE-dZB" id="LRb-El-63v"/>
+                <outlet property="eiaType2Btn" destination="BU5-3d-G7x" id="y69-0r-uwC"/>
+                <outlet property="eiaType3Btn" destination="JDt-Mr-oda" id="vaJ-nn-Upd"/>
+                <outlet property="noBtn" destination="CUg-uD-Vxu" id="yWL-kn-KC2"/>
+                <outlet property="operatingState1Btn" destination="qSd-uW-NCm" id="Xx9-iz-Va7"/>
+                <outlet property="operatingState2Btn" destination="tGY-OH-4az" id="Fhu-Mr-UD7"/>
+                <outlet property="operatingState3Btn" destination="CQW-O3-rjU" id="KBf-vd-lUA"/>
+                <outlet property="operatingState4Btn" destination="aVk-Ed-1vq" id="Tl2-9O-pil"/>
+                <outlet property="operatingState5Btn" destination="Leo-UW-Pm9" id="MDY-dh-Q1U"/>
+                <outlet property="parkChooseBtn" destination="r3P-vt-Sw0" id="3vP-JF-y3p"/>
+                <outlet property="parkText" destination="LMc-EX-raf" id="TFg-NF-8MJ"/>
+                <outlet property="patrolEndTimeBtn" destination="5c7-FN-QyE" id="ePc-8p-bYm"/>
+                <outlet property="patrolStarTimeBtn" destination="XW6-Ob-OqY" id="k5w-VZ-JxJ"/>
+                <outlet property="result1Btn" destination="NO2-57-Xuc" id="EbC-XL-k2d"/>
+                <outlet property="result2Btn" destination="vxi-pN-oED" id="RCz-zJ-TDt"/>
+                <outlet property="result3Btn" destination="ip1-4m-biX" id="3CI-MT-JYJ"/>
+                <outlet property="userType1Btn" destination="qqb-BM-p2b" id="RgR-7s-dG2"/>
+                <outlet property="userType2Btn" destination="ayR-Vr-bXv" id="82a-3Z-b6b"/>
+                <outlet property="wasteDisposal1Btn" destination="alB-Ma-0mh" id="Z5s-UK-4EH"/>
+                <outlet property="wasteDisposal2Btn" destination="0Mg-2F-lBx" id="WR6-DC-fl3"/>
+                <outlet property="wasteDisposal3Btn" destination="SVz-8x-mGz" id="tSw-mg-SLc"/>
+                <outlet property="wasteDisposal4Btn" destination="eKN-if-KGy" id="KVS-na-eJA"/>
+                <outlet property="yesBtn" destination="U2x-V5-eGa" id="kmt-41-4Pl"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="public_danxuan_weixuan" width="15" height="15"/>
+        <image name="public_danxuan_xuanze" width="15" height="15"/>
+        <image name="search" width="24" height="24"/>
+    </resources>
+</document>

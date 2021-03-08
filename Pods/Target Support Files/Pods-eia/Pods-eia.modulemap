@@ -1,0 +1,6 @@
+framework module Pods_eia {
+  umbrella header "Pods-eia-umbrella.h"
+
+  export *
+  module * { export * }
+}
